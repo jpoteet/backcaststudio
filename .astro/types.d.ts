@@ -195,6 +195,20 @@ declare module 'astro:content' {
 } & { render(): Render[".md"] };
 };
 "pages": {
+"elements.mdx": {
+	id: "elements.mdx";
+  slug: "elements";
+  body: string;
+  collection: "pages";
+  data: InferEntrySchema<"pages">
+} & { render(): Render[".mdx"] };
+"privacy-policy.md": {
+	id: "privacy-policy.md";
+  slug: "privacy-policy";
+  body: string;
+  collection: "pages";
+  data: InferEntrySchema<"pages">
+} & { render(): Render[".md"] };
 };
 "sections": {
 "call-to-action.md": {
