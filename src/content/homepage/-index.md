@@ -19,9 +19,9 @@ features:
       - "Personalized engagement: Deliver targeted messages and offers to your audience, nurturing leads and driving conversions."
       - "Data-driven decisions: Gain valuable insights into customer behavior and campaign performance, empowering informed decision-making for future strategies."
     button:
-      enable: false
+      enable: true
       label: "Get Started Now"
-      link: "https://forms.fillout.com/t/ekHL3eYgBZus"
+      link: "/marketing-automation"
 
   - title: "Elevate Your Brand Story with Compelling Content"
     image: "/images/content.png"
