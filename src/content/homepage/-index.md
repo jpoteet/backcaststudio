@@ -21,7 +21,7 @@ features:
     button:
       enable: false
       label: "Get Started Now"
-      link: "/marketing-automation"
+      link: "https://forms.fillout.com/t/ekHL3eYgBZus"
 
   - title: "Elevate Your Brand Story with Compelling Content"
     image: "/images/content.png"
