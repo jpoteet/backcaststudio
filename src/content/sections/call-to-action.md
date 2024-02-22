@@ -6,5 +6,5 @@ description: "Unlock the full potential of your business with my tailored soluti
 button:
   enable: true
   label: "Book a Discovery Call"
-  link: "#"
+  link: "https://savvycal.com/jessepoteet/backcast-intro"
 ---
