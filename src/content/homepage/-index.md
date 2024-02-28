@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Unlock Your Growth Potential: Expert Marketing Automation Made Simple"
-  content: "Effortlessly navigate the complexities of marketing automation with my expert guidance. Achieve sustainable growth while freeing up time to focus on what truly matters."
+  title: "Unlock Your Growth Potential: Expert Digital Marketing Made Simple"
+  content: "Effortlessly navigate the complexities of digital marketing with my expert guidance. Achieve sustainable growth while freeing up time to focus on what truly matters."
   image: "/images/banner.png"
   button:
     enable: true
