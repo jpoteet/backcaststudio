@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- UPDATE AD SIZE -->
+  <meta name=”ad.size” content=”width=300,height=250”>
+
+  <title>Arrow Search Ad</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="scripts/typed.js"></script>
+<script>
+$(document).ready(function() {
+  $('.element').on('click', function() {
+    $('.element').typed({
+      strings: ["",""],
+      backSpeed: -3000,
+    });
+  });
+  $(function(){
+    $(".element").typed({
+      strings: ["Spend $20...^1000", "Get Free Overnight Shipping^1000", "Search Arrow.com Now^1000"],
+      typeSpeed: 30,
+      loop: true,
+      loopCount: 2,
+      backSpeed: -1000,
+      showCursor: true,
+      cursorChar: "|",
+      contentType: 'test',
+    });
+  });
+});
+</script>
+
+  <script type="text/javascript">
+
+  var baseSearchUrl = "https://www.arrow.com/en/products/search";
+
+  var clickTag = "https://www.arrow.com";
+
+  function submitForm()
+  {
+    var form = document.getElementById("ArrowAd-search");
+
+    // overwrite clickTag for our form values
+    clickTag = baseSearchUrl + "?q=" + form.q.value;
+
+    window.open(window.clickTag)
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles/style.css" />
+  <script src="scripts/EBLoader.js"></script>
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div id="ad">
+        <div class="ArrowAd">
+            <a href="javascript:window.open(window.clickTag)" class="ArrowAd-home clickthrough-button"></a>
+            <form onsubmit="submitForm()" id="ArrowAd-search" class="ArrowAd-search" method="GET">
+                <input class="ArrowAd-search-input element" type="text" name="q"/>
+
+                <!--- NEW CODE --->
+                <!-- DELETE ALL COMMENTS BEFORE PUSHING LIVE -->
+                <!-- Change utm_source value dependent on spreadsheet -->
+                <input type="hidden" name="utm_source" value="google"/>
+                <input type="hidden" name="utm_medium" value="cpc"/>
+                <input type="hidden" name="utm_content" value="dynamic_ad"/>
+
+                <!-- DELETE ALL COMMENTS BEFORE PUSHING LIVE -->
+                <!-- Change utm_campaign value dependent on spreadsheet -->
+                <input type="hidden" name="utm_campaign" value="arrow_june_freeovernight_refresh"/>
+                <!--- END NEW CODE --->
+
+                <button class="ArrowAd-search-submit clickthrough-button" type="submit"></button>
+            </form>
+            <a href="javascript:window.open(window.clickTag)" class="ArrowAd-home-bottom clickthrough-button"></a>
+        </div>
+    </div>
+</body></html>
