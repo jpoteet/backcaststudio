@@ -35,20 +35,7 @@ const { banner, features }: Homepage = homepage.data;
             class="mb-4 text-h3 lg:text-h1"
           />
           <p set:html={markdownify(banner.content)} class="mb-8" />
-          {
-            banner.button.enable && (
-              <a
-                class="btn btn-primary"
-                href={banner.button.link}
-                target={
-                  banner.button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel="noopener"
-              >
-                {banner.button.label}
-              </a>
-            )
-          }
+          
         </div>
         <!-- {
           banner.image && (
